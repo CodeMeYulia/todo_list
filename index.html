@@ -11,33 +11,26 @@
 
 <body>
     <div class="container">
-        <div class="todo-add">
-            <label for="#do">Добавить новую задачу</label><br>
-            <input type="text" id="do" value="задача">
-            <button>Добавить в план</button>
-        </div>
-        <div class="todo-list__container">
-            <div class="todo-list">
-                <label for="#list">Список задач</label><br>
-                <fieldset id="list">
-                    <div class="todo">
-                        <input type="text" value="">
-                        <input type="checkbox">
-                    </div>
-                    <div class="todo">
-                        <input type="text" value="">
-                        <input type="checkbox">
-                    </div>
-                    <div class="todo">
-                        <input type="text" value="">
-                        <input type="checkbox">
-                    </div>
-                </fieldset>
+        <form class="todo-add">
+            <span class="label">Добавить новую задачу</span><br>
+            <fieldset class="add-field">
+                <input type="text" value="" placeholder="добавьте задачу" class="add">
+            </fieldset>
+            <button class="submit" type="submit">добавить в план</button>
+        </form>
+        <div class="todo-list" id="list">
+            <span class="label">Список задач</span><br>
+            <fieldset class="todo-field">
+                <div class="todo-point">
+                    <p class="alertEmpty">Нет задач</p>
+                </div>
+            </fieldset>
 
-            </div>
-            <button>очистить список</button>
+            <button class="reset" type="reset" disabled="disabled">очистить список</button>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
