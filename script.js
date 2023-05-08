@@ -1,33 +1,26 @@
 // debugger;
-
-//определяем переменные
+// //определяем переменные
 const add = document.querySelector('.add');
 const submit = document.querySelector('.submit');
 const todoPoint = document.querySelector('.todo-point');
 const reset = document.querySelector('.reset');
+const listArr = [];
+todoPoint.innerHTML = `<p class="alertEmpty">Нет задач</p>`;
 
-//описание функции добавления задачи
+//добавляем задачу по клику на кнопку добавить
+submit.addEventListener('click', () => {
+    
+    todoPoint.innerHTML = `<div class='todo-point'>
+    <p class="todo">${add.value}</p>
+    <label><input type="checkbox" class="checkbox"></label></div>`;
+    document.querySelector('.add').value = '';
 
-let addTodo = () => 
-{
-    let point = document.createElement('input');
-    point.innerHTML = `${add.value}`;
-    point.className = 'todo';
-    point.type = 'checkbox';
-    todoPoint.append(point);
-
-    const listArr = [];
-    listArr.push(point);
+    listArr.push(todoPoint);
     console.log(listArr);
+    document.querySelector('.todo-field').innerHTML = listArr;
+    reset.disabled = false;
+}); 
 
-}
-
-submit.addEventListener('click', addTodo); 
-
-
-
-
-
-
-
-
+reset.addEventListener('click', () => {
+    document.querySelector('.todo-field').innerHTML = `<p class="alertEmpty">Нет задач</p>`
+});
