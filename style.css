@@ -1,6 +1,7 @@
 /* *{
     border: 1px dashed red;
 } */
+
 .container {
     background-color: rgb(129, 126, 138);
     max-width: 600px;
@@ -8,7 +9,7 @@
     width: 20vw;
     margin: auto;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 .todo-add,
@@ -30,7 +31,8 @@ padding: 5px;
     border-style: none;
     border-radius: 10px;
     margin: auto;
-    width: 50%;
+    /* width: 45%; */
+    
 }
 
 .todo-field {
@@ -56,11 +58,8 @@ button {
 
 
 .todo-point{
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    
 }
 
 .add{
@@ -71,6 +70,7 @@ button {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 10px;
 }
 
 .alertEmpty{
@@ -80,9 +80,12 @@ button {
     padding: 15px;
 }
 
-
-.checkbox:checked + label{
-    color: green;
+.is-trough{
     text-decoration: line-through;
+}
+
+.title{
+align-items: center;
+text-align:center ;
 }
 
