@@ -30,15 +30,12 @@ submit.addEventListener('click', () => {
 }); 
 
 //зачеркивать выбранный элемент
-todoPoint.addEventListener('click', function(evt) {
+document.querySelector('.todo-field').addEventListener('click', function(evt) {
     const active = evt.target.checked;
     if (active) {
-        console.log('mao!');
-        // console.log(select.value);
-        // todo.classList.add('.is-trough');
+        todo.classList.add('is-trough');
     }else{
-        console.log('хрю!')
-        // todo.classList.remove('is-trough');
+        todo.classList.remove('is-trough');
     }
 })
 
