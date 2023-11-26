@@ -63,3 +63,17 @@ img{
     color: white;
 }
 
+.buttonPrz{
+    background-color: rgb(156, 175, 50);
+    border-radius: 10px;
+    border-style: none;
+    height: 100px;
+    width: 280px;
+    font-size: 21px;
+    color: white;
+    margin-left: 200px;
+}
+
+.invisible{
+    display: none;
+}
