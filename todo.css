@@ -1,0 +1,59 @@
+.blockAdd {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.blockView {
+    background-color: rgb(215, 250, 242);
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#inputTodo {
+    border-radius: 5px;
+    border-style: dotted;
+    width: 80%;
+    min-height: 30px;
+    text-align: center;
+    font-size: medium;
+}
+
+button {
+    font-size: 12px;
+    min-width: 100px;
+    border-radius: 5px;
+    background-color: rgb(253, 181, 130);
+    border-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.listTodo {
+    background-color: azure;
+    width: 80%;
+    min-height: 50px;
+    margin: auto;
+}
+
+.iDid {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.task {
+    max-width: 90%;
+    /* border: 1px dashed grey; */
+    border-radius: 5px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}

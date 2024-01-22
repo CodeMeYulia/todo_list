@@ -25,3 +25,36 @@
 
 // let i = 0;
 // while (i++ < 5) console.log(i); //1 2 3 4 5 
+
+
+// const currentData = new Date();
+// console.log(currentData);
+// const currentYear = new Date().getFullYear();
+// console.log(currentYear);
+// const poemYear = 1820;
+// const yearsPassed = currentYear - poemYear;
+// console.log();
+
+// const container = document.querySelector('.container');
+// const result = document.createElement('p');
+// result.textContent = `С момента написания стихотворения Пушкина "У Лукоморья... " прошло ${yearsPassed} лет/года.`;
+// container.append(result);
+
+
+// console.log(new Date().getTimezoneOffset());
+// let todayMs = (new Date().getTime());
+// const tomorrowMs = (new Date(2023, 11, 3, 0, 0 ,0 ,0).getTime());
+// let howLongTomorrow = Math.round((tomorrowMs - todayMs)/1000);
+// console.log(`До наступления завтрашнего дня осталось ${howLongTomorrow} секунд.`);
+// let d = new Date(2016, 2, 9);
+// console.log(d);
+
+// console.log(new Date().getTimezoneOffset()/60);
+
+// let date = new Date();
+
+// console.log(date.getUTCHours());
+
+// d = new Date(); 
+// let y =  d.getFullYear();
+// console.log(y);
